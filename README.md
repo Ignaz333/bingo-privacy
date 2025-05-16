@@ -1,87 +1,70 @@
+Datenschutzerklärung
+
 1. Verantwortlicher gemäß Art. 4 Abs. 7 DSGVO
 Niclas Braun
 Plettenbergstraße 20b
 21031 Hamburg
 E-Mail: bingoscann@gmail.com
 
-2. Erhobene Daten & Verarbeitungszwecke
-Firebase Authentication
-Zweck: Anmeldung über anonyme Firebase-Authentifizierung
+2. Datenverarbeitung in der App
 
-Daten: UID (User ID, anonym)
+Die App verarbeitet personenbezogene Daten nur im erforderlichen Umfang und auf Basis gesetzlicher Erlaubnistatbestände gemäß Art. 6 DSGVO:
 
-Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertrag/ähnliches Nutzungsverhältnis)
+- Firebase Authentication: Verarbeitung der Benutzerkennung (UID) zur Anmeldung.
+  Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung)
 
-Firestore (Firebase Cloud Firestore)
-Zweck: Speicherung von Bingo-Scheinen mit Datum und UID
+- Cloud Firestore: Speicherung von Spielscheinen, Datum und UID zur Verwaltung individueller Spielstände.
+  Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO
 
-Daten: UID, Bingo-Zahlen, Zeitstempel
+- ML Kit (Text Recognition): Texterkennung erfolgt ausschließlich lokal auf dem Gerät, keine Übermittlung an Google-Server.
+  Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Funktionalität der App)
 
-Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO
+- OpenCV (Bildverarbeitung): Die Bildvorverarbeitung und -analyse zur Verbesserung der Texterkennung erfolgt ausschließlich lokal auf deinem Gerät. Es werden keine Bilder oder Bilddaten an Dritte übermittelt.
+  Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Optimierung der App-Funktionen)
 
-ML Kit (nur lokal)
-Zweck: Texterkennung aus Fotos zur automatisierten Erfassung von Bingo-Scheinen
+- Google Mobile Ads SDK (AdMob): Die App nutzt das Google Mobile Ads SDK (AdMob) zur Anzeige von Werbeanzeigen. 
+  Personalisierte Werbung wird ausschließlich dann angezeigt, wenn du zuvor ausdrücklich eingewilligt hast (Consent). Die Einwilligung wird beim ersten App-Start über einen Dialog abgefragt und kann jederzeit in den Einstellungen der App („Datenschutzeinstellungen ändern“) widerrufen oder angepasst werden.
+  Falls du keine Einwilligung erteilst, werden weiterhin Werbeanzeigen angezeigt, diese sind jedoch nicht personalisiert. 
+  Das bedeutet: Es erfolgt keine Auswertung deiner Interessen oder deines Nutzungsverhaltens für Werbezwecke. Die Anzeigen basieren dann ausschließlich auf allgemeinen, nicht personenbezogenen Kriterien.
+  Rechtsgrundlagen: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) für personalisierte Werbung; Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Refinanzierung der App) für nicht-personalisierte Werbung.
 
-Daten: Keine personenbezogenen Daten, keine Cloud-Übertragung
+- Feedback-Funktion (E-Mail): Wenn du freiwillig Feedback sendest, wird deine E-Mail-Adresse verarbeitet.
+  Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO
 
-Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an App-Funktion)
+- Google Play Billing: Zahlungsabwicklung erfolgt ausschließlich über Google Play. Es werden keine Zahlungsdaten durch uns gespeichert.
+  Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO
 
-Google Mobile Ads
-Zweck: Anzeige von Werbebannern und Interstitial-Werbung
+3. Hosting & Auftragsverarbeitung
 
-Daten: Werbe-ID (AAID), Gerätedaten
+Die Datenverarbeitung erfolgt über Dienste der Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA. Google ist unter dem EU-U.S. Data Privacy Framework zertifiziert. Eine Datenübermittlung außerhalb der EU erfolgt nur, wenn ein angemessenes Datenschutzniveau gewährleistet ist (Art. 45 DSGVO).
 
-Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung über Google SDK)
+4. Speicherdauer
 
-Feedback-Funktion („mailto:“)
-Zweck: Kontaktaufnahme per E-Mail
+- Benutzerbezogene Daten (z. B. Spielscheine, UID): Speicherung bis zur manuellen Löschung durch den Nutzer.
+- Werbeeinwilligungen: können jederzeit über die Datenschutzeinstellungen in der App widerrufen oder angepasst werden.
+- Serverprotokolle: nur anonymisiert und für technische Stabilität (max. 90 Tage).
 
-Daten: Nur durch Nutzer manuell übermittelter Inhalt
+5. Rechte der betroffenen Personen (Art. 15 ff. DSGVO)
 
-Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch Handlung)
-
-Google Play Billing (geplant)
-Zweck: In-App-Käufe zur Freischaltung von Premium-Funktionen
-
-Daten: Abrechnungsdaten (nur über Google, nicht durch App)
-
-Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO
-
-3. Hosting & Datenverarbeitung
-Serverstandort: Weltweit (Firestore: globale Standardregion, inkl. USA)
-
-Datenübermittlung: Google LLC, USA
-
-Datensicherheit: Google ist zertifiziert nach dem EU-U.S. Data Privacy Framework
-
-4. Speicherdauer & Löschung
-Scheine & UID: Speicherung bis zur manuellen Löschung durch den Nutzer in der App
-
-Automatische Löschung: derzeit nicht implementiert
-
-Einwilligungen (Google Ads): können über Geräteeinstellungen zurückgesetzt werden
-
-5. Betroffenenrechte (Art. 15 ff. DSGVO)
 Du hast jederzeit das Recht auf:
 
-Auskunft über deine gespeicherten Daten
+- Auskunft über gespeicherte Daten
+- Berichtigung oder Löschung deiner Daten
+- Einschränkung der Verarbeitung
+- Widerspruch gegen die Verarbeitung
+- Datenübertragbarkeit
 
-Berichtigung, Löschung oder Einschränkung der Verarbeitung
+Zudem hast du ein Beschwerderecht bei einer Datenschutzaufsichtsbehörde.
+In der App kannst du deine Daten eigenständig unter „Konto & Daten löschen“ entfernen.
 
-Widerspruch gegen die Verarbeitung
+6. Änderungen dieser Datenschutzerklärung
 
-Datenübertragbarkeit (Art. 20 DSGVO)
-
-Beschwerde bei der zuständigen Datenschutzaufsichtsbehörde
-
-Eine vollständige Datenlöschung kannst du in den App-Einstellungen („Konto & Daten löschen“) selbst anstoßen.
-
-6. Änderungen
-Diese Datenschutzerklärung kann angepasst werden, wenn sich technische Änderungen oder gesetzliche Anforderungen ergeben. Die jeweils aktuelle Version ist in der App einsehbar.
+Diese Datenschutzerklärung kann sich bei technischen, gesetzlichen oder funktionellen Änderungen der App anpassen. Die jeweils aktuelle Version ist jederzeit in der App einsehbar.
 
 Stand: Mai 2025
 
-7. Impressum (gemäß § 5 TMG)
+7. Impressum gemäß § 5 TMG
+
 Niclas Braun
 Plettenbergstraße 20b
 21031 Hamburg
